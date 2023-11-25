@@ -220,6 +220,10 @@ p {
   height: 64px;
 }
 
+.start-0{
+  left: 0;
+}
+
 .pl-26 {
   padding-left: 26px !important;
 }
@@ -765,6 +769,10 @@ p {
   background: #FBFDFF;
 }
 
+.overflow_hidden{
+  overflow: hidden;
+}
+
 .opcity-9 {
   opacity: 0.9;
 }
@@ -935,17 +943,6 @@ p {
     transform: scale(0.9);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 991.9px) {
   .mobileView {
