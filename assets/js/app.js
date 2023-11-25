@@ -10,22 +10,22 @@ function openNav() {
 }
 
 redact.addEventListener("click",function(){
-    document.getElementById("navbar").classList.remove("start-0");
+    document.getElementById("navBar").classList.remove("start-0");
     document.body.classList.remove("overflow_hidden");
     document.querySelector(".menu").classList.remove("cross")
 })
 extract.addEventListener("click",function(){
-    document.getElementById("navbar").classList.remove("start-0");
+    document.getElementById("navBar").classList.remove("start-0");
     document.body.classList.remove("overflow_hidden");
     document.querySelector(".menu").classList.remove("cross")
 })
 detect.addEventListener("click",function(){
-    document.getElementById("navbar").classList.remove("start-0");
+    document.getElementById("navBar").classList.remove("start-0");
     document.body.classList.remove("overflow_hidden");
     document.querySelector(".menu").classList.remove("cross")
 })
 compare.addEventListener("click",function(){
-    document.getElementById("navbar").classList.remove("start-0");
+    document.getElementById("navBar").classList.remove("start-0");
     document.body.classList.remove("overflow_hidden");
     document.querySelector(".menu").classList.remove("cross")
 })
