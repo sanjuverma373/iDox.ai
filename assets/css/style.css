@@ -105,6 +105,10 @@
   background: rgba(251, 253, 255, 0.01);
  
 }
+.backflt{
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
+}
 
 p {
   margin-bottom: unset !important;

@@ -7,6 +7,7 @@ function openNav() {
     document.getElementById("navBar").classList.toggle("start-0");
     document.body.classList.toggle("overflow-hidden");
     document.querySelector(".menu").classList.toggle("cross")
+    document.querySelector(".nav-bg").classList.toggle("backflt")
 }
 
 redact.addEventListener("click",function(){
@@ -23,6 +24,8 @@ detect.addEventListener("click",function(){
     document.getElementById("navBar").classList.remove("start-0");
     document.body.classList.remove("overflow_hidden");
     document.querySelector(".menu").classList.remove("cross")
+   
+    
 })
 compare.addEventListener("click",function(){
     document.getElementById("navBar").classList.remove("start-0");
