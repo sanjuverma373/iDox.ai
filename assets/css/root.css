@@ -2,7 +2,7 @@
         /* font-size */
         --fs-sm: 11px;
         --fs-sm1: 12px;
-        --fs-md: 13px;
+        --fs-md: 13px !important;
         --fs-md1: 14px !important;
         --fs-lg: 16px;
         --fs-lg1: 26px;
@@ -26,7 +26,7 @@
        --color-dark-blue1: #021e38;
        --color-dark-blue2: #021f37;
        --color-dark-blue3: #053768;       
-       --color-white:#fbfdff;
+       --color-white:#fbfdff !important;
        --color-light-purple: #b1b7bd;
        --color-light-purple1: #cad3dd;
     }
@@ -110,7 +110,7 @@
         color: var(--color-light-purple1);
     }
     .white{
-        color: var(--color-white);
+        color: var(--color-white) !important;
     }
 
     @media (min-width:567px) {
@@ -118,7 +118,7 @@
             /* font-size */
             --fs-sm: 14px;
             --fs-sm1: 15px;
-            --fs-md: 16px;
+            --fs-md: 16px !important;
             --fs-md1: 18px !important;
             --fs-lg: 20px;
             --fs-lg1: 32px;

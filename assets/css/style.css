@@ -103,7 +103,8 @@
 .nav-bg {
   border-bottom: 1px solid rgba(251, 253, 255, 0.20);
   background: rgba(251, 253, 255, 0.01);
-  /* backdrop-filter: blur(16.5px); */
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
 }
 
 p {
@@ -260,15 +261,16 @@ p {
 }
 
 .accordion-button {
-  color: #fbfdff !important;
+  color:var(--color-white) !important;
   transition: all 500ms linear !important;
   padding: 22.5px 23.456px 23.5px 25.544px !important;
+  font-size: 18px !important;
 }
 
 .accordion-button:not(.collapsed) {
   padding-bottom: var(--bs-accordion-active-padding-bottom) !important;
   transition: all 300ms linear !important;
-  color: #0389ff !important;
+  color: var(--color-light-blue)  !important;
 }
 
 .accordion {
@@ -308,10 +310,6 @@ p {
   transition: .4s !important;
 }
 
-.common-crd:hover {
-  transform: translateY(-4px) translateX(-2px);
-  box-shadow: 2px 5px 0 0 lightblue;
-}
 
 .elips-13 {
   width: 200.479px;
@@ -404,7 +402,7 @@ p {
   z-index: -1;
   position: absolute;
   top: 24%;
-  left: 33%;
+  left: 41%;
 }
 
 /* product-section */
@@ -764,13 +762,17 @@ p {
 
 .footer-l {
   max-width: 1920px;
-  height: 1px;
-  opacity: 0.2;
+  height: 1px;  
   background: #FBFDFF;
+  opacity: 0.2;  
 }
 
 .overflow_hidden{
   overflow: hidden;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .opcity-9 {
@@ -795,6 +797,9 @@ p {
 
 .opcity-8 {
   opacity: 0.8;
+}
+.opcity-2 {
+  opacity: 0.2;
 }
 
 /* -------------------------------------preloader------------------------------------- */
