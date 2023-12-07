@@ -10,26 +10,26 @@ function openNav() {
     document.querySelector(".nav-bg").classList.toggle("backflt")
 }
 
-redact.addEventListener("click",function(){
+redact.addEventListener("click", function () {
     document.getElementById("navBar").classList.remove("start-0");
-    document.body.classList.remove("overflow_hidden");
+    document.body.classList.remove("overflow-hidden");
     document.querySelector(".menu").classList.remove("cross")
 })
-extract.addEventListener("click",function(){
+extract.addEventListener("click", function () {
     document.getElementById("navBar").classList.remove("start-0");
-    document.body.classList.remove("overflow_hidden");
+    document.body.classList.remove("overflow-hidden");
     document.querySelector(".menu").classList.remove("cross")
 })
-detect.addEventListener("click",function(){
+detect.addEventListener("click", function () {
     document.getElementById("navBar").classList.remove("start-0");
-    document.body.classList.remove("overflow_hidden");
+    document.body.classList.remove("overflow-hidden");
     document.querySelector(".menu").classList.remove("cross")
-   
-    
+
+
 })
-compare.addEventListener("click",function(){
+compare.addEventListener("click", function () {
     document.getElementById("navBar").classList.remove("start-0");
-    document.body.classList.remove("overflow_hidden");
+    document.body.classList.remove("overflow-hidden");
     document.querySelector(".menu").classList.remove("cross")
 })
 
@@ -48,14 +48,28 @@ window.addEventListener('scroll', function () {
 const preloader = document.getElementById("preloader");
 setTimeout(() => {
     document.getElementById("preloader").classList.add("d_none")
-    document.body.classList.remove("flow-hidden")
+    document.body.classList.remove("overflow-hidden")
 
 }, 2000);
 
 
 
+let box = document.querySelectorAll(".box");
+box.forEach((row) => {
+  row.addEventListener("click", () => {
+    const x = document.querySelector(".active");
+    row.classList.toggle("active");
+    x && x.classList.remove("active");
 
-
+    if (!isOpen) {
+      // Smoothly open the clicked item
+      content.style.maxHeight = content.scrollHeight + "px";
+    } else {
+      // Close the clicked item
+      content.style.maxHeight = null;
+    }
+  });
+});
 
 
 
