@@ -23,13 +23,13 @@
 
 .elips-1 {
   width: 170.329px !important;
-  height: 303.657px !important;
+  height: 180.657px !important;
   border-radius: 303.657px;
   opacity: 0.4;
   background: var(--color-light-blue3);
   filter: blur(100px);
   position: absolute;
-  bottom: 5%;
+  bottom: 12%;
   left: 9%;
   z-index: -1;
 }
@@ -448,15 +448,6 @@ p {
   z-index: -1;
 }
 
-.common-img-h {
-  transition: .4s;
-}
-
-.common-img-h:hover {
-  transform: scale(1.1);
-}
-
-
 /* Our Integrations */
 .border-box1 {
   border-bottom: 1px solid #273139;
@@ -789,6 +780,13 @@ ul {
   padding-left: unset !important;
 }
 
+.crd-bt3{
+  border-top: 1px solid #273139;
+}
+.crd-bt2{
+  border-top: 1px solid #273139;
+}
+
 /* -------------------------------------preloader------------------------------------- */
 .loader_bg {
   z-index: 9;
@@ -1019,7 +1017,6 @@ ul {
   }
 }
 
-
 @media (min-width:767.8px) {
   .border-box1 {
     border-right: 1px solid #273139;
@@ -1172,10 +1169,10 @@ ul {
     border-bottom: transparent;
     border-right: transparent;
   }
-
-
-
-
+  
+  .crd-bt2{
+    border-top: 1px solid transparent;
+  }
 }
 
 @media (max-width:1200px) {
